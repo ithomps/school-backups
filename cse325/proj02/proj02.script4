@@ -1,0 +1,28 @@
+#!/bin/tcsh -f
+#
+# C shell script to list the n largest places in Michigan
+# Uses if statments to implement error checking
+# \param number of places to list
+# \param A: List everything, T: Townships, C: Cities
+#
+
+echo "N largest places in Micigan, filtered by city or township"
+
+if ($#argv != 2) then
+  echo 'Error: Two Arguments must be provided'
+
+else
+  if ($argv[1] <= 0) then
+    echo 'Error: Number of census units must be greater than 0'
+  else if ($argv[2] == 'A') then
+    sort -t'|' -b -k 3nr /user/cse325/Projects/project02.data | head -$argv[1]
+  else if ($argv[2] == 'T') then
+    sort -t'|' -b -k 3nr /user/cse325/Projects/project02.data | grep -m $argv[1] "township"
+  else if ($argv[2] == 'C') then
+    sort -t'|' -b -k 3nr /user/cse325/Projects/project02.data | grep -m $argv[1] "city"
+  else
+    echo 'Error: Either A, T, or C must be specified'
+
+  endif
+endif
+

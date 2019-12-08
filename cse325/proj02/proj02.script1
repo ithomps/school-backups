@@ -1,0 +1,11 @@
+#!/bin/tcsh -f
+#
+# C shell script to sort and then list all cities
+# in a provided county.
+#
+
+echo "Sorted list of cities in a given county\n"
+cat /user/cse325/Projects/project02.headers
+
+grep "$1  " /user/cse325/Projects/project02.data | sort -t"|" -b -k 3n
+

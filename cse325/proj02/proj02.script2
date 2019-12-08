@@ -1,0 +1,11 @@
+#!/bin/tcsh -f
+#
+# C shell script to sort and list multiple input counties
+#
+
+echo "Multiple Country Report Sorted by Population"
+foreach item ($argv[*]:q)
+  cat /user/cse325/Projects/project02.headers
+  grep "| $item" /user/cse325/Projects/project02.data | sort -t"|" -b -k 3n
+  echo "\n"
+end
