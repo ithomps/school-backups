@@ -1,0 +1,9 @@
+Harry Potter hpotter@hogwarts.edu
+Hermione Granger hgranger@hogwarts.edu
+Ron Weasley rweasley@hogwarts.edu
+Oliver Wood owood@hogwarts.edu
+Percy Weasley pweasley@hogwarts.edu
+Alicia Spinnet aspinnet@hogwarts.edu
+Angelina Johnson ajohnson@hogwarts.edu
+Fred Weasley fweasley@hogwarts.edu
+George Weasley gweasley@hogwarts.edu

@@ -1,0 +1,18 @@
++f a
++f is
++b fun
++b project
++f this
+print
+-f
+-f
+-b
++f play
++b game
+print
+count a
+keep 1 3
+print
+clear
+print
+len
